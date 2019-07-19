@@ -32,5 +32,5 @@ steps:
 - task: AzureRmWebAppDeployment@3
   inputs:
     azureSubscription: 'PA Upbeat Azure'
-    WebAppName: 'pipeline dotnetCoreDemo'    
+    WebAppName: 'PipelineDotnetCoreDemo'    
     Package: $(System.ArtifactStagingDirectory)/**/*.zip
