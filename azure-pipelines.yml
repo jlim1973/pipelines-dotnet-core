@@ -33,4 +33,4 @@ steps:
   inputs:
     azureSubscription: 'PA Upbeat Azure'
     WebAppName: 'PipelineDotnetCoreDemo'    
-    Package: $(System.ArtifactStagingDirectory)/**/*.zip
+    Package: $(Build.ArtifactStagingDirectory)/**/*.zip
