@@ -28,3 +28,9 @@ steps:
     zipAfterPublish: True
 
 #- task: PublishBuildArtifacts@1
+
+- task: AzureRmWebAppDeployment@3
+  inputs:
+    azureSubscription: '<Azure service connection>'
+    WebAppName: 'pipeline dotnetCoreDemo'
+    Package: $(System.ArtifactStagingDirectory)/**/*.zip
