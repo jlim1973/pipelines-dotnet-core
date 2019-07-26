@@ -15,6 +15,7 @@ namespace pipelines_dotnet_core
         public static void Main(string[] args)
         {
             CreateWebHostBuilder(args).Build().Run();
+            throw new exception("test exception";
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
