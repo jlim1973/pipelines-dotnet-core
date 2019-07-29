@@ -15,6 +15,7 @@ namespace pipelines_dotnet_core
         public static void Main(string[] args)
         {
             CreateWebHostBuilder(args).Build().Run();
+            //pipeline demo
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
